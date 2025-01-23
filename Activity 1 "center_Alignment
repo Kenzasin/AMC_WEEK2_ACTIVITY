@@ -1,0 +1,41 @@
+import React from 'react';
+import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+
+const App = () => {
+  return (
+    <ScrollView>
+      <Text
+      style={{
+        textAlign: 'center',
+         fontSize: 40,
+         fontWeight: 'bold'
+      }}>Tamesa</Text>
+      <View
+        style={{
+          flex: 1,
+          justifyContent:"center",
+          alignItems:"center"
+        }}>
+        <Text>ADV </Text>
+        <Image
+          source={{
+            uri: 'https://th.bing.com/th/id/OIP.SzOyVBmqaq1pO7xdwNYBrQAAAA?rs=1&pid=ImgDetMain',
+          }}
+          style={{width: 400, height: 400}}
+        />
+      </View
+      >
+      <TextInput
+        style={{
+          height: 50,
+          borderColor: 'gray',
+          borderWidth: 1,
+          textAlign: 'center'
+        }}
+        defaultValue="You can type in me"
+      />
+    </ScrollView>
+  );
+};
+
+export default App;
