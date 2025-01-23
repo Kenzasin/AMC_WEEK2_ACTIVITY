@@ -1,0 +1,36 @@
+import React, {useState} from 'react';
+import {Text, StyleSheet} from 'react-native';
+import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+
+
+
+
+  const BoldAndBeautiful = () => (
+  <SafeAreaProvider>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.baseText}>
+        TAMESA
+        <Text style={styles.innerText}> KENNETH</Text>
+      </Text>
+          <Text numberOfLines={5}> <Text style={{color: "red"}}>'My name is kenneth</Text> the demon of GRC from IT-303 i did have a role from sysarch, and that is to make my classmate happy for ever after yeahh wala ako masabi sir kasi inaantok nako at pagods nako magtype huhuhubels <Text style={{color: "blue"}}>#PAGODNASIJC YEAH'</Text></Text>
+
+      </SafeAreaView>
+    </SafeAreaProvider>
+  );
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  baseText: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  innerText: {
+    color: 'red',
+    fontSize: 40,
+  },
+});
+export default BoldAndBeautiful;
